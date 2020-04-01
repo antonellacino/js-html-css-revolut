@@ -8,7 +8,7 @@ a{
   text-decoration: none;
   color: grey;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 a:hover{
   color: black;
@@ -16,6 +16,7 @@ a:hover{
 li{
   display: inline-block;
 }
+
 div.absolute{
   display: none;
   position: absolute;
@@ -25,6 +26,20 @@ div.absolute{
   border: 1px solid grey;
   text-align: center;
 
+}
+div i {
+  padding-top: 8px;
+  color: grey;
+  font-size: 20px;
+}
+.relative{
+  position: relative;
+}
+.fadeIn{
+  display: block;
+}
+.fadeOut{
+  display: none;
 }
 .container{
   display: flex;
@@ -36,11 +51,73 @@ div.absolute{
 .nav-sx{
   display: flex;
   align-items: center;
+  width: 20%;
 }
-.hamburger-menu{
+.nav-dx{
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.relative{
-  position: relative;
+
+.btn{
+  height: 50px;
+  width: 130px;
+  border-radius: 30px;
+  background-color: rgb(235, 0, 141);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+i.fa-bars{
+  display: none;
+}
+i.fa-times{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  li, a{
+    margin: 10px 5px;
+  }
+  i.fa-bars, i.fa-times{
+    display: block;
+    position: absolute;
+    top:25px;
+    right:100px;
+  }
+  .nav-dx{
+    display: none;
+  }
+  div.fadeOut {
+    display: block;
+  }
+
+  div.hamburger-menu{
+    display: none;
+  }
+  .hamburger-menu{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #personal-business, #navigation ul{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  li button{
+
+  }
+}
+@media screen and (max-width: 1200px) {
+  div.hamburger-menu{
+    display: none;
+  }
 }
