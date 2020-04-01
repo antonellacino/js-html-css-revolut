@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+a{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  padding: 0 20px;
+}
+a:hover{
+  color: black;
+}
+li{
+  display: inline-block;
+}
+div.absolute{
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: grey;
+  border: 1px solid grey;
+  text-align: center;
+
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+.nav-sx{
+  display: flex;
+  align-items: center;
+}
+.hamburger-menu{
+  display: flex;
+  align-items: center;
+}
+.relative{
+  position: relative;
+}
